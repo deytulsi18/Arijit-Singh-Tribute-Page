@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+:root {
+  --themeColor: #f2f1f1;
+
+  --mainText: black;
+  --secondaryText: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #aa1111;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+body * {
+  transition: 0.3s;
+}
+.navbar {
+  background: #0003;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+.nav-list {
+  list-style: none;
+  padding: 0.5em 0;
+}
+.nav-list li{
+  display: inline;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: var(--mainText);
+  padding: 0 1em 0 1em;
+}
+.nav-list li a:hover {
+  color: rgb(255, 255, 0);
+}
+#theme-options {
+  float: right;
+  padding: 0 1rem 0 1rem;
+}
+.theme-dot {
+  cursor: pointer;
+  display: inline-flex;
+  margin-top: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+#light-mode {
+  background-color: #eee;
+  border: 1px solid #232323;
+}
+#dark-mode {
+  background-color: #232323;
+  border: 1px solid #eee;
+}
+h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 6rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+h2 {
+  color: var(--mainText);
+  font-family: "Libre Baskerville", serif;
+  font-size: 3rem;
+  padding: 5rem 1rem 2rem;
+}
+h3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+  padding: 2rem 1rem 2rem;
+}
+#subheader {
+  color: rgb(255, 251, 0);
+  font-family: "Libre Baskerville", serif;
+  font-size: large;
+  text-transform: uppercase;
+  padding: 0 1rem 2rem 1rem;
+}
+.para {
+  padding: 1rem;
+}
+.container {
+  padding: 5rem 2rem 5rem 2rem;
+}
+
+.first-sec {
+  background-color: #aa1111;
+  background-image: linear-gradient(#aa1111, #ce0000);
+  padding: 8rem 4rem 8rem 4rem;
+}
+.second-sec {
+  color: var(--secondaryText);
+  background-color: var(--themeColor);
+  padding: 2rem 4rem 8rem 4rem;
+}
+.third-sec {
+  background-color: #aa1111;
+  background-image: linear-gradient(#aa1111, #ce0000);
+  padding: 2rem 4rem 8rem 4rem;
+  color: black;
+}
+.fourth-sec {
+  background-color: var(--themeColor);
+  padding: 2rem 4rem 8rem 4rem;
+}
+.fifth-sec {
+  background-color: gold;
+  padding: 2rem 4rem 8rem 4rem;
+  background-image: linear-gradient(#ffcc00, #ffd800);
+}
+#img-main {
+  float: right;
+  width: 17.5rem;
+  height: 17.5rem;
+  border-radius: 30%;
+  border: 0.75rem solid rgb(2, 2, 34);
+  margin: -1rem 1rem 2rem 0;
+}
+.img-div {
+  padding-top: 1rem;
+}
+a {
+  text-decoration: none;
+}
+iframe {
+  width: 300px;
+  height: 200px;
+}
+.footer {
+  color: black;
+  background-color: #aa1111;
+  background-image: linear-gradient(#aa1111, #ce0000);
+  text-align: center;
+  padding: 6rem 2rem 3rem;
+}
+#intro-para {
+  padding: 2rem 4rem 0 0;
+}
+.bio-heading {
+  text-align: center;
+}
+.awards {
+  padding: 1.5rem 1.5rem;
+}
+#awards-main-heading {
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+}
+.awards-heading {
+  padding: 1.5rem 0;
+  font-family: "Poppins", sans-serif;
+}
+.songs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.song-items {
+  color: var(--secondaryText);
+  margin: 0 1rem;
+  padding: 0.1rem 3rem;
+  font-family: sans-serif;
+}
+.center-headings {
+  text-align: center;
+}
+#tribute-link {
+  color: rgb(248, 201, 98);
+  margin-left: 1rem;
+}
+
+#tribute-link:visited {
+  color: rgb(248, 201, 98);
+}
+#tribute-link-dash {
+  text-decoration: none;
+}
+.up {
+  color: rgb(255, 0, 0);
+  background-color: var(--themeColor);
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 0.125em 0.3em 0.125em 0.3em;
+  border-radius: 50%;
+}
+.up:hover {
+  color: var(--themeColor);
+  background: rgb(255, 0, 0);
+}
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+}
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 3px 3px;
+}
+.sec-img {
+  padding: 5rem 2rem;
+}
+.ari-img {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 0 1.5rem;
+  -webkit-box-shadow: 2px 2px 10px 0 #000; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 2px 2px 10px 0 #000; /* Firefox 3.5 - 3.6 */
+  box-shadow: 2px 2px 10px 0 #000; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  width: 50rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#ari-award-div {
+  padding: 2rem 2rem;
+}
+#ari-award {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30rem;
+}

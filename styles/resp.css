@@ -1,0 +1,103 @@
+@media only screen and (max-width: 1275px) {
+  .songs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .song-items {
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+  }
+  #img-main {
+    float: none;
+    margin-left: -1rem;
+  }
+  .navbar {
+    justify-content: center;
+  }
+  .nav-list li a {
+    padding: 1.2rem;
+  }
+  .sec-img {
+    padding: 3rem 2rem;
+  }
+  .ari-img {
+    width: 40rem;
+  }
+  #ari-award-div {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  #ari-award {
+    width: 40rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+  }
+  .nav-list li {
+    padding:  1rem;
+    font-size: larger;
+    align-items: center;
+  }
+  .navbar {
+    float: none;
+    background-color: #0009;
+    transition: all 0.7s ease-out;
+    font-size: x-large;
+    height: 34em;
+  }
+  .nav-list li {
+    text-align: center;
+    display: block;
+    padding: 2rem 0;
+  }
+   .nav-list li a{
+     color: #eee;
+   }
+  .burger {
+    padding-top: 0.1em;
+    display: block;
+  }
+  .nav-resp {
+    height: 2.5em;
+  }
+  .class-resp {
+    opacity: 0;
+  }
+  .first-sec{
+    padding-top: 2rem;
+  }
+  #theme-options {
+    float: none;
+    text-align: center;
+    padding: 1rem;
+  }
+  .theme-dot {
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+  }
+  .sec-img {
+    padding: 3rem 2rem;
+  }
+  .ari-img {
+    width: 25rem;
+  }
+  #ari-award-div {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  #ari-award {
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .ari-img {
+    width: 15rem;
+  }
+  #ari-award {
+    width: 15rem;
+  }
+}
