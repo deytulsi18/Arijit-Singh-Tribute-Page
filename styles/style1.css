@@ -238,3 +238,43 @@ iframe {
   margin-right: auto;
   width: 30rem;
 }
+.right-nav {
+  background-color: rgba(128, 128, 128, 0.5);
+  /* background-color: green; */
+  border-radius: 12.5px;
+  display: flex;
+  align-items: center;
+  margin: 4rem 2rem 0 2rem;
+  opacity: 1;
+}
+
+#search-bar{
+  max-width: 70rem;
+  /* background-color: blue; */
+  margin: auto;
+}
+
+input {
+  all: unset;
+  color: var(--secondaryText);
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+}
+::placeholder {
+  color: #00000081;
+  /* opacity: 0.8; */
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 2.75rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  margin: 0.5rem;
+}
+.right-nav {
+  /* float: right; */
+}
