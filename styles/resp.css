@@ -114,10 +114,13 @@
   .first-sec,
   .second-sec,
   .third-sec,
-  .fourth-sec,
   .fifth-sec {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .fourth-sec {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .song-items {
     width: 75%;
