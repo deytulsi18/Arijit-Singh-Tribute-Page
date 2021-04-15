@@ -2,10 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 
 :root {
-  --themeColor: #f2f1f1;
+  --themeColor: rgb(240, 238, 238);
 
   --mainText: black;
-  --secondaryText: black;
+  --secondaryText:#232323;
+
+  --fontMainText: "Libre Baskerville", serif;
+  --fontSecondaryText: "Poppins", sans-serif;
 }
 
 * {
@@ -66,25 +69,25 @@ body section{
   border: 1px solid #eee;
 }
 h1 {
-  font-family: "Libre Baskerville", serif;
+  font-family: var(--fontMainText);
   font-size: 6rem;
   padding: 1rem;
   font-weight: bold;
 }
 h2 {
   color: var(--mainText);
-  font-family: "Libre Baskerville", serif;
+  font-family: var(--fontMainText);
   font-size: 3rem;
   padding: 5rem 1rem 2rem;
 }
 h3 {
-  font-family: "Libre Baskerville", serif;
+  font-family: var(--fontMainText);
   font-size: 2rem;
   padding: 2rem 1rem 2rem;
 }
 #subheader {
   color: rgb(255, 251, 0);
-  font-family: "Libre Baskerville", serif;
+  font-family: var(--fontMainText);
   font-size: large;
   text-transform: uppercase;
   padding: 0 1rem 2rem 1rem;
@@ -99,17 +102,17 @@ h3 {
 .first-sec {
   background-color: #aa1111;
   background-image: linear-gradient(#aa1111, #ce0000);
-  padding: 2rem 4rem 8rem 4rem;
+  padding: 2rem 4rem 8rem 6rem;
 }
 .second-sec {
   color: var(--secondaryText);
   background-color: var(--themeColor);
-  padding: 2rem 4rem 8rem 4rem;
+  padding: 2rem 6rem 8rem 6rem;
 }
 .third-sec {
   background-color: #aa1111;
   background-image: linear-gradient(#aa1111, #ce0000);
-  padding: 2rem 4rem 8rem 4rem;
+  padding: 2rem 6rem 8rem 6rem;
   color: black;
 }
 .fourth-sec {
@@ -118,7 +121,7 @@ h3 {
 }
 .fifth-sec {
   background-color: gold;
-  padding: 2rem 4rem 8rem 4rem;
+  padding: 2rem 6rem 8rem 6rem;
   background-image: linear-gradient(#ffcc00, #ffd800);
 }
 #img-main {
@@ -127,7 +130,7 @@ h3 {
   height: 17.5rem;
   border-radius: 30%;
   border: 0.75rem solid rgb(2, 2, 34);
-  margin: -1rem 1rem 2rem 0;
+  margin: 1rem 1rem 2rem 4rem;
 }
 .img-div {
   padding-top: 1rem;
