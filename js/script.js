@@ -1,4 +1,6 @@
 
+// <--- theme switch -->
+
 // getting the selected theme from the local storage
 let theme = localStorage.getItem('theme');
 
@@ -30,3 +32,21 @@ function setTheme(mode) {
     }
     localStorage.setItem('theme', mode);
 }
+
+
+
+// <--- Search bar --->
+const f = document.querySelector("#form");
+const q = document.querySelector("#query");
+const google = 'https://www.google.com/search?q=';
+// const youtube = 'https://www.youtube.com/results?search_query=';
+
+function submitted(event) {
+    event.preventDefault();
+    const url = google + q.value;
+    // const url = youtube + q.value;
+    const win = window.open(url, '_blank');
+    win.focus();
+}
+
+f.addEventListener('submit', submitted);

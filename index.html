@@ -79,8 +79,11 @@
     <section class="second-sec" id="bio">
         <h2 class="bio-heading">Biography</h2>
         <div class="sec-img">
-            <img class="ari-img" src="https://raw.githubusercontent.com/deytulsi18/Tribute-Page/main/images/img-2.jpg"
-                alt="Arijit Singh image" width="35%">
+            <div class="card destroy-box1" id="destroy-box">
+                <img class="ari-img"
+                    src="https://raw.githubusercontent.com/deytulsi18/Tribute-Page/main/images/img-2.jpg"
+                    alt="Arijit Singh image" width="35%">
+            </div>
         </div>
         <div data-aos="fade-up">
             <p class="para">Singh began his career when he participated in the contemporary reality show, Fame Gurukul
@@ -119,9 +122,11 @@
         </div>
         <h2 class="bio-heading">Early Career</h2>
         <div class="sec-img">
-            <img class="ari-img"
-                src="https://raw.githubusercontent.com/deytulsi18/Tribute-Page/main/images/young-ari-img.jpg"
-                alt="Arijit Singh image1" width="35%">
+            <div class="card destroy-box1" id="destroy-box">
+                <img class="ari-img"
+                    src="https://raw.githubusercontent.com/deytulsi18/Tribute-Page/main/images/young-ari-img.jpg"
+                    alt="Arijit Singh image1" width="35%">
+            </div>
         </div>
         <div data-aos="fade-up">
             <p class="para">Singh's musical career began when his guru Rajendra Prasad Hazari, who felt that "Indian
@@ -277,11 +282,11 @@
                 </div>
             </div>
             <div id="search-bar">
-            <form class="right-nav" id="form" role="search">
-                <input type="search" id="query" name="q" placeholder="Search a song..."
-                    aria-label="Search through site content">
-                <button><i class="fa fa-search"></i></button>
-            </form>
+                <form class="right-nav" id="form" role="search">
+                    <input type="search" id="query" name="q" placeholder="Search a song..."
+                        aria-label="Search through site content">
+                    <button><i class="fa fa-search"></i></button>
+                </form>
             </div>
     </section>
 
@@ -289,9 +294,11 @@
     <section class="fifth-sec" id="awards">
         <h2 id="awards-main-heading">Awards</h2>
         <div class="sec-img" id="ari-award-div">
-            <img id="ari-award" class="ari-img"
-                src="https://raw.githubusercontent.com/deytulsi18/Tribute-Page/main/images/ari-award-img.png"
-                alt="Arijit Singh image1" width="35%">
+            <div class="card destroy-box1" id="destroy-box">
+                <img id="ari-award" class="ari-img"
+                    src="https://raw.githubusercontent.com/deytulsi18/Tribute-Page/main/images/ari-award-img.png"
+                    alt="Arijit Singh image1" width="35%">
+            </div>
         </div>
         <div class="awards" data-aos="fade-up">
             <h3 class="awards-heading"> Filmfare Awards</h3>
@@ -347,6 +354,8 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/resp.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+
     <script>
         AOS.init({
             offset: 300,
@@ -354,20 +363,24 @@
         });
     </script>
     <script>
-        const f = document.querySelector("#form");
-        const q = document.querySelector("#query");
-        const google = 'https://www.google.com/search?q=';
-        // const youtube = 'https://www.youtube.com/results?search_query=';
+        
+    </script>
 
-        function submitted(event) {
-            event.preventDefault();
-            const url = google + q.value;
-            // const url = youtube + q.value;
-            const win = window.open(url, '_blank');
-            win.focus();
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 12,
+            speed: 3500,
+            glare: true,
+            "max-glare": 0.625,
+        });
+
+        const boxes = document.querySelectorAll(".card");
+
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            boxes.forEach(box => {
+                box.vanillaTilt.destroy();
+            });
         }
-
-        f.addEventListener('submit', submitted);
     </script>
 
 </body>
